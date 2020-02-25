@@ -24,7 +24,8 @@ function generatePassword(){
   if (passLength >= 10 && passLength <= 30) {
     passLengthValue = parseInt(passLength);
   } else {
-    alert("Please enter a valid number!")
+    alert("Please enter a valid number!");
+    return generatePassword();
 
 } 
 
