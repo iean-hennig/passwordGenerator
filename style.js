@@ -24,7 +24,7 @@ function generatePassword(){
   if (passLength >= 10 && passLength <= 30) {
     passLengthValue = parseInt(passLength);
   } else {
-    alert("Please enter a valid number!");
+    alert("Please enter a correct number!");
     return generatePassword();
 
 } 
@@ -35,7 +35,7 @@ function generatePassword(){
   var spec = confirm("Do you want to include special characters?");
   
 
-//lowercase letters
+
 if (lCase===true) {
   lCaseValue = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
    
@@ -43,14 +43,14 @@ if (lCase===true) {
     passCriteria.push(lCaseValue[i]);
   }
 }
-//uppercase letters
+
 if (uCase===true) {
   uCaseValue = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
    for (i = 0; i < uCaseValue.length; i++) {
      passCriteria.push(uCaseValue[i]);
    }
 }
-//numbers 
+ 
 if (num===true) {
   numValue = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
    
@@ -58,7 +58,7 @@ if (num===true) {
     passCriteria.push(numValue[i]);
   }
 }
-//special characters 
+ 
 if (spec===true) {
   specValue = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "=", "{", "[", "}", "]", ":", ";", "'", "<", ">", "?", "/", "`", "~"];
   for (i = 0; i < specValue.length; i++){
